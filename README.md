@@ -1,32 +1,32 @@
 ## -2 AGREGO EL SIGUIENTE PRODUCTO 
 
-db.products.insertOne({
-    sku:"A101",
-    name:"Figura Naruto Uzumaki",
-    category: "Figuras",
-    price: 120000,
-    stock: 10,
-    anime: "Naruto",
-    rating: 4.8,
-    tags: ["coleccionable", "resina", "edición especial"],
-    provider: {
-        name: "OtakuDistribuciones",
-        country: "Japón"
-    }
-})
+    db.products.insertOne({
+        sku:"A101",
+        name:"Figura Naruto Uzumaki",
+        category: "Figuras",
+        price: 120000,
+        stock: 10,
+        anime: "Naruto",
+        rating: 4.8,
+        tags: ["coleccionable", "resina", "edición especial"],
+        provider: {
+            name: "OtakuDistribuciones",
+            country: "Japón"
+        }
+    })
 
 ## -3 AGREGO A TODOS LOS PRODUCTOS LAS SIGUIENTES PROPIEDADES 
 
-db.products.updateMany(
-  {},
-  {
-		$set:{
-			available: true,
-			origin: "Importado"
+    db.products.updateMany(
+        {},
+        {
+		    $set:{
+			    available: true,
+			    origin: "Importado"
 			
-		}
-	}
-)
+		    }
+	    }
+    )
 
 ## -4 REALIZO LAS SIGUIENTES ACTUALIZACIONES
 
